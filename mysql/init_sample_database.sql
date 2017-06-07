@@ -18,6 +18,6 @@ CREATE TABLE Score (
     Score int NOT NULL,
     StudentID int,
     LessonID int,
-    FOREIGN KEY (StudentID) REFERENCES Student(ID)
+    FOREIGN KEY (StudentID) REFERENCES Student(ID),
     FOREIGN KEY (LessonID) REFERENCES Lesson(ID)
 );
